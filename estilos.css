@@ -1,0 +1,86 @@
+
+/*ESTILO-BODY Y HEADER*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+        font-family: Comic serif;
+        
+}
+
+.header{
+    background:rgb(71, 138, 177);
+    height: 103px;
+}
+ul, ol {
+    list-style:none;
+}
+.nav > li {
+    float:right;
+}
+.nav li a {
+    background-color:rgb(71, 138, 177);
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    padding:40px 50px;
+    display:block;
+    font-family: 'Comic serif';
+    border: rgb(26, 111, 160) 2px solid;
+}
+.nav li a:hover{
+    background-color: rgba(238, 238, 238, 0.612);
+}
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+    }
+    .formulario__titulo{
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0,0,0,0.7);
+    }
+    .formulario__imput, .formulario__label, .formulario__submit{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    }
+    .formulario__imput{
+    padding: 20px ;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 40px;
+    }
+    .formulario__imput:focus{
+    outline: 1px solid rgba(0,0,0,0.7);
+    }
+    .formulario__imput:focus + .formulario__label {
+    margin-top: -135px;
+    }
+    .formulario__label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;
+    }
+    .formulario__submit{
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    }
+    
